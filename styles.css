@@ -20,11 +20,18 @@ a {
 .nav-header {
     display: flex;
     padding: 20px 40px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .list-container {
     display: flex;
+    width: 70vw;
     padding: 20px;
+}
+
+.header__links {
+    padding: 10px;
 }
 
 .icon1,
@@ -34,11 +41,11 @@ a {
 }
 
 .icon1 {
-    background: url(./images/icon.png);
+    background: url(./images/icon.png) left no-repeat; 
 }
 
 .icon2 {
-    background: url(./images/login.png);
+    background: url(./images/login.png) left no-repeat;
 }
 
 
