@@ -61,11 +61,13 @@ a {
 }
 
 .icon1 {
-    background: url(./images/icon.png) left no-repeat; 
+    background: url(./images/icon.png) left no-repeat;
 }
 
 .icon2 {
     background: url(./images/login.png) left no-repeat;
+    position: relative;
+    top: 1px;
 }
 
 .book-online {
@@ -100,7 +102,7 @@ a {
 .page1-info-wrapper {
     width: 40vw;
     height: 80vh;
-    margin: 100px 0 0 200px;
+    margin: 200px 0 0 100px;
 }
 
 
@@ -108,6 +110,9 @@ a {
     font-size: 3rem;
 }
 
+.page1__paragraph {
+    margin: 20px 0 10px 0;
+}
 
 .service-container {
     display: flex;
@@ -117,7 +122,7 @@ a {
     height: 60px;
     background: black;
     padding: 10px;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 80px 0;
 }
 
 .our-services {
@@ -139,9 +144,9 @@ a {
 .discount-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     width: 70%;
-    height: 50%;
+    height: 40%;
     background: black;
 }
 
@@ -158,14 +163,14 @@ a {
     height: 40%;
     word-wrap: wrap;
     padding-left: 20px;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 
 .whitebox {
     background: white;
     width: 60%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,23 +197,23 @@ a {
 
 .page2 {
     width: 100vw;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .section-wrapper {
     display: flex;
+    justify-content: center;
     width: 70vw;
     height: 80%;
 }
 
 .service-info {
     padding: 20px;
-    width: 30%;
+    width: 40vw;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -217,8 +222,15 @@ a {
     height: 80px;
 }
 
+.page2__heading,
+.service-description {
+    text-align: center;
+}
 
-
+.page2__heading {
+    margin: 20px 0;
+    font-size: 1rem;
+}
 
 .stylist-photo {
     max-width: 300px;
@@ -226,7 +238,7 @@ a {
 }
 
 .page3 {
-    height: 70vh;
+    height: 50vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -235,36 +247,42 @@ a {
 
 .page3-wrapper {
     width: 80vw;
-    height: 70vh;
+    height: 80%;
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
 
 .page3-textwrapper {
-    width: 55vw;
+    width: 40vw;
+    height: 30%;
 }
 
 .page3-imagewrapper {
-    width: 25vw;
+    width: 40vw;
+    height: 80%;
+}
+
+.video {
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .page3__heading {
     width: 75%;
-    word-wrap: wrap;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .page3-description {
-    width: 75%;
+    width: 65%;
     word-wrap: wrap;
     margin: 20px 0;
 }
 
 .blackbox {
     background: black;
-    width: 30%;
-    height: 10%;
+    width: 150px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,19 +311,19 @@ a {
 }
 
 .page4 {
-    height: 80vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+.stylists-images {
+    width: 70vw;
+}
 
-.stylists-images,
 .discount-img-container,
 .page6-wrapper {
     width: 80vw;
-
 }
 
 .stylists-images {
@@ -316,7 +334,7 @@ a {
 
 .nameplate {
     background: black;
-    width: 160px;
+    width: 140px;
     height: 50px;
     position: relative;
     z-index: 2;
@@ -330,7 +348,7 @@ a {
 }
 
 .nameplate-name {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .nameplate > .nameplate-name + span {
@@ -340,8 +358,8 @@ a {
 .stylist1,
 .stylist2,
 .stylist3 {
-    width: 200px;
-    height: 300px;
+    width: 180px;
+    height: 280px;
 }
 
 .page5 {
