@@ -84,8 +84,6 @@ a {
 }
 
 .page1 {
-    min-width: 100vw;
-    min-height: 100vh;
     width: 100vw;
     height: 100vh;
     background: url(./images/page1-bg.jpg) no-repeat;
@@ -448,3 +446,144 @@ a {
     grid-row: 2 / 4;
 }
 
+/* Media Queries for Mobile Phones */
+
+@media screen and (max-width: 400px) {
+    .list-container,
+    .page3-imagewrapper,
+    .mobile {
+        display: none;
+    }
+
+    .logo-container {
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+
+    .page1 {
+        background-size: contain;
+    }
+
+    .page1-info-wrapper {
+        width: 50vw;
+        margin: 20px 40px;
+    }
+
+    .page1__heading {
+        font-size: 2rem;
+    }
+
+    .page1__paragraph {
+        margin: 10px 0;
+    }
+
+    .service-container {
+        margin: 80px 0 30px 0;
+    }
+
+    .discount-container {
+        width: 170px;
+    }
+
+    .discount__heading {
+        padding: 0 0 0 20px;
+    }
+
+    .discount-info {
+        line-height: 1.75rem;
+    }
+
+    .discount-info > .bold {
+        font-size: 2rem;
+    }
+
+    .whitebox {
+        margin: 15px 0 0 20px;
+        width: 130px;
+    }
+
+    .book-online-btn {
+        font-size: .75rem;
+        display: flex;
+    }
+
+    .page2 {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .section-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .service-info {
+        padding: 0;
+        margin-bottom: 20px;
+        width: 70vw;
+    }
+
+    .page3 {
+        height: 80vh;
+    }
+    
+    .page3-textwrapper {
+        width: 80vw;
+    }
+
+    .page4 {
+        height: 100vh;
+    }
+
+    .stylists-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90%;
+    }
+
+    .stylist1,
+    .stylist2,
+    .stylist3 {
+        width: 120px;
+        height: 180px;
+    }
+
+    .stylist-photo {
+        display: flex;
+        align-items: center;
+    }
+
+    .nameplate {
+        z-index: inherit;
+        top: auto;
+        left: auto;
+        margin-left: 20px;
+    }
+    
+    .page5 {
+        height: 40vh;
+    }
+
+    .lookbook-photos {
+        display: grid;
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: repeat(4, 125px);
+        gap: 10px;
+    }
+
+    .photo3-1 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .photo3-2 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
